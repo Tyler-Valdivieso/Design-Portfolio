@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--
+WRITTEN BY: Tyler Valdivieso
+EMAIL: valdivit@uci.edu
+-->
+    
+    <head>
+         
+        <meta charset="utf-8">
+         <!--Sets the width of the webpage to stay the same as the width of the device the page is being viewed on-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Importing bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Importing fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab%7COpen+Sans%7CVolkhov" rel="stylesheet">
+        <!--Importing stylesheet-->
+        <link rel= "stylesheet" type= "text/css" href= ProjectPages.css >
+        <title>T Valdivieso Vibes</title>
+    </head>
+    
+    <body>
+        
+<!--NavBar-->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <span class="navbar-brand align-items-center d-flex flex-fill"></span>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav justify-content-center d-flex flex-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="services" data-toggle="dropdown">
+                    Project Select
+                </button>
+                <div class="dropdown-menu" aria-labelledby="services">
+                    <a class="dropdown-item" href="Vibes.html">Vibes</a>
+                    <a class="dropdown-item" href="TwitterRunkeeper.html">Runkeeper Tweet Tracker</a>
+                    <a class="dropdown-item" href="SpotifyBrowser.html">Spotify Browser</a>
+                    <a class="dropdown-item" href="JPsOW1.html">JP's Old West</a>  
+                    <a class="dropdown-item" href="GroupMe1.html">GroupMe Redesign</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-fill">
+        <a href="https://www.linkedin.com/in/tyler-valdivieso-747b9915a/">
+        <img class="linkedin" src=linked_in_black.png alt = "LinkedIn"></a>
+    </div>
+</nav>        
+<hr>
+    
+<div class="container">
+
+
+<!-- Problem -->
+    <div class = "row">
+        <h3>Background<br></h3>
+    </div>
+    
+    <div class = "row">
+    <p class = "dtext col-12">For one of my senior project courses I was assigned to a team and tasked with creating software that tackles mental health issues. This is where Vibes was conceived. In general, Vibes is an app where users anonymously post how they feel and then send and receive “vibes” amongst each other through the use of preset emojis. In addition to this, users can track how they feel in more detail by submitting a private journal entry alongside their mood.<br><br>
+        
+        The purpose behind Vibes is to create a positive and uplifting community that users can rely on for validation and affirmation when they’re feeling down. As with most apps, it is hard to tell you exactly what Vibes is by using only words. I suggest you<a href="https://inf-134-vibes.firebaseapp.com"> experience Vibes here</a> to get a better feel for exactly what it is. </p>
+    </div>
+    
+    <div class = "row">
+        <h3>Key Design Choices I Made<br></h3>
+    </div>
+    
+    <div class = "row">
+        <h4><br>1. Emotion wheel implementation</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            One of my main jobs on this project was to the implement the emotion wheel users see once they login to the app. During the design process two versions of the emotional wheel were created and our team was split upon which one to use. Option A consisted of a “emotion flower” where users selected their emotion by sliding on the flowers petals. Option B (the one used in our app) was a collapsable “emotion wheel” where users selected their mood by clicking on it. To decide upon which design was going to be used in the app, I conducted some basic A/B testing and discovered that the vast majority of users preferred option B and found it more intuitive to use in general. 
+    </div>
+    
+    
+    <div class = "row">
+        <figure class="col-lg-6">
+            <img style="width:250px; display:block; margin:auto; padding-top:75px;" src=EmoWheel.png alt = "Emo Flower">
+                <figcaption><br><br>Option A (Emo Flower)</figcaption>
+        </figure>
+
+        <figure class="col-lg-6">
+            <video width="250px" autoplay muted loop controls> 
+                <source src="emwheelvid.mov" type="video/mp4">
+            </video>
+                <figcaption>Option B (Emo Wheel)</figcaption>
+        </figure>
+    </div>
+    
+ 
+    <div class = "row">
+        <h4><br>2. Choosing to make a progressive web app (PWA)</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            After conceiving our idea for the project, we knew two things heading into the development stage. That we wanted Vibes to be mainly a mobile based experience and that we were going to need to create a few custom UI elements to make our idea a reality. With these two things in mind we had to decide under which framework to build our app.<br><br>Since a few members of our team, myself included, had some prior experience with Ionic we thought that Ionic might be the way to go at first. However, none of us really had a particularly good experience with using Ionic and I had a major concern that building custom UI elements using Ionic would be extremely difficult given the lack of documentation and community behind Ionic, especially since Ionic 4 had just released.<br><br>Therefore, we decided to go with our second idea and create a progressive web app (PWA for short). Creating a PWA in this situation was the perfect choice for two reasons. For one, PWAs automatically enable caching and for your website to be downloaded onto a mobile device just like any other app. Secondly, since a PWA is a web app it can created by using standard web development tools (HTML, CSS, Bootstrap, TypeScript, etc.) which makes it so much easier to create custom UI elements than if we were using something like Ionic. 
+        </p>
+    </div>
+    
+    
+    <div class = "row">
+        <h4><br>3. Disallowing peer to peer messaging</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            While thinking further about who will use this app and how they will do so, I thought about internet trolls and those who use anonymity to tear down others online. Our app is the perfect target to be invaded by trolls because all users on the app are anonymous and the app is all about promoting positive “vibes”. Furthermore, since our target audience consists of those who are seeking a positive online environment and uplifting community, I figured that trolling would be extremely detrimental to the experience of our users and it should be prevented at all costs. By not including peer to peer messaging there is no way for users to be nasty to each other on the app. The only interaction users can have with one another other is sending “vibes” through the preset emojis we have provided them.  
+        </p>
+    </div>
+    
+    <div class = "row">
+        <h3>Potential Improvements<br></h3>
+    </div>
+ 
+    <div class = "row">
+        <h4><br>1. Allowing peer to peer messaging</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            After we created our initial prototype, we conducted some basic user testing to help us better understand our users’ thoughts on the app. One comment that came up during multiple different tests was “why can’t I message anyone?”. One ability I believe that makes a great designer/developer is being able to put your pride aside and accept that no matter how smart you may be, the collective knowledge of your user base is always greater than your own. Even though I initially thought it would be a great design choice to leave out peer to peer messaging, a portion of our users think otherwise which means we should conduct some more research beyond our initial user test to see if adding a messaging feature is really the way to go.  
+        </p>
+    </div>
+    
+    <div class = "row">
+        <h4><br>2. Squashing Bugs</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            As you may have discovered for yourself, our application is admittedly pretty buggy at the moment. This is probably because it has only been under development for a few weeks though. A few bugs that I've discovered that need cleaning up include: new users' "Received Vibes" chart not showing up when they have yet to be sent any vibes from other users, some users' journals not updating properly, and others users' emojis overlapping on the "Send Vibes" screen.
+        </p>
+    </div>
+    
+    <div class = "row">
+        <figure class="col-lg-6">
+            <img style="width:250px; display:block; margin:auto; padding-top:75px;" src=recVibes.png alt = "Received Vibes Screen">
+                <figcaption><br>Received Vibes screen working as intended.</figcaption>
+        </figure>
+        
+        <figure class="col-lg-6">
+            <img style="width:250px; display:block; margin:auto; padding-top:75px;" src=recVibesGlitched.png alt = "Glitched Received Vibes Screen">
+                <figcaption><br>Received Vibes screen bugged out.</figcaption>
+        </figure>
+    </div>
+    
+    
+    <div class = "row">
+        <h4><br>3. Expanding Vibes</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            Lucky.
+        </p>
+    </div>
+    
+    <div class = "row">
+        <h3>Reflection<br></h3>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            Through this project I was able to apply some front end skills I have picked up throughout the last few years such as Angular, Bootstrap, HTML, TypeScript, and so on. Being able to use these skills to create something interesting from scratch was a rewarding experience. More importantly however, this project showed me how much you can accomplish when your team has great chemistry and enjoy working with one another. I’m extremely proud of how much our team was able to achieve in only about 4 weeks of development time and I believe the relationships that were built amongst our team is one of the main reasons we were able to get so much done.  
+        </p>
+    </div>
+ 
+</div>
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+    <!--Footer-->
+    <footer>
+        <p>© 2019 Tyler Valdivieso</p>
+    </footer>
+    
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>

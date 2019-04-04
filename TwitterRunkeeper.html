@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--
+WRITTEN BY: Tyler Valdivieso
+EMAIL: valdivit@uci.edu
+-->
+    
+    <head>
+         
+        <meta charset="utf-8">
+         <!--Sets the width of the webpage to stay the same as the width of the device the page is being viewed on-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Importing bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Importing fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab%7COpen+Sans%7CVolkhov" rel="stylesheet">
+        <!--Importing stylesheet-->
+        <link rel= "stylesheet" type= "text/css" href= ProjectPages.css >
+        <title>T Valdivieso Twitter</title>
+    </head>
+    
+    <body>
+        
+<!--NavBar-->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <span class="navbar-brand align-items-center d-flex flex-fill"></span>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav justify-content-center d-flex flex-fill">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="services" data-toggle="dropdown">
+                    Project Select
+                </button>
+                <div class="dropdown-menu" aria-labelledby="services">
+                    <a class="dropdown-item" href="Vibes.html">Vibes</a>
+                    <a class="dropdown-item" href="TwitterRunkeeper.html">Runkeeper Tweet Tracker</a>
+                    <a class="dropdown-item" href="SpotifyBrowser.html">Spotify Browser</a>
+                    <a class="dropdown-item" href="JPsOW1.html">JP's Old West</a>  
+                    <a class="dropdown-item" href="GroupMe1.html">GroupMe Redesign</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-fill">
+        <a href="https://www.linkedin.com/in/tyler-valdivieso-747b9915a/">
+        <img class="linkedin" src=linked_in_black.png alt = "LinkedIn"></a>
+    </div>
+</nav>        
+<hr>
+    
+<div class="container">
+
+
+<!-- Backgound -->
+    <div class = "row">
+        <h3>Background<br></h3>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">Here is one of the major projects I created for a “User Interaction Software” class. The purpose of the project was to use JavaScript, JQuery, and TypeScript in combination with HTML and CSS (of course) to create a web tool that would aid in research. More specifically, this tool would help researchers dynamically obtain and make sense of valuable data from a week’s worth of Tweets uploaded from RunKeeper, a popular running app. Simply put I was given a set of a few thousand Tweets uploaded from RunKeeper and had to make a website that would calculate and display certain statistics about the set of Tweets.<br><br>
+
+This project was a solo effort so all code contained in the <a href="https://github.com/Tyler-Valdivieso/Runkeeper-Tweet-Tracker">GitHub repo</a> was written by me. Furthermore, if you would like to play around with the project for yourself I have uploaded it <a href="https://runkeeper-proj.firebaseapp.com/index.html">here</a>.</p>
+    </div>
+    
+    
+<!-- Design Choices -->
+    <div class = "row">
+        <h3>Design Choices<br></h3>
+    </div>
+ 
+    <div class = "row">
+        <p class = "dtext col-12">
+        Since I knew that most of my allotted time on this project was going to be spent on the actual development of the site rather than its design, I aimed to create a simple but effective interface in order to be able to finish the project on time. I believe I accomplished this through displaying information about the set of Tweets in a coherent manner across each of the site's three pages.</p>
+    </div>
+    
+    <div class = "row">
+        <div class = "col-12 text-center">
+            <img class = "bigimg" src=runkeeper1.png alt = "Runkeeper Site Home Page">
+        </div> 
+    </div>
+    
+    <div class = "row">
+        <div class = "col-12 text-center">
+            <img class = "bigimg" src=runkeeper2.png alt = "Runkeeper Site Home Page">
+        </div> 
+    </div>
+    
+    <div class = "row">
+        <div class = "col-12 text-center">
+            <img class = "bigimg" src=runkeeper3.png alt = "Runkeeper Site Home Page">
+        </div> 
+    </div>
+      
+    
+<!-- Improvements -->
+    <div class = "row">
+        <h3>Potential Improvements<br></h3>
+    </div>
+ 
+    <div class = "row">
+        <p class = "dtext col-12">
+            I know this project was intended to just help us learn some front end development skills and not be used in an actual research project. However, I feel like with just a few additions and tweaks this project could actually be an effective research tool used in the real world.  
+        </p>
+    </div>
+    
+    <div class = "row">
+        <h4><br>1. Allowing users to upload their own sets of #RunKeeper Tweets</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            This is the key feature in turning this project into a research tool ready for real world use. Allowing users to upload their own sets of RunKeeper Tweets would open numerous doors of possibilities. Users would be able to upload their sets of Tweets and be able to gather data through the website in real time. Researchers could then easily compare different sets of Tweets against each other to gather valuable information (maybe people on the west coast bike more than people in other parts of the country, or people tend to run more in the morning than at night, etc). It all just depends on the type of RunKeeper Tweets the researchers want to learn about. Also, I feel like implementing this feature is very feasible since everything on the site is already dynamically generated according to the set of Tweets I was given by the professor. The set I was given is just every English Tweet with the Hashtag “#RunKeeper” in it uploaded to Twitter between Sunday, September 23, 2018 and Saturday, September 29, 2018.  
+        </p>
+    </div>
+    
+    <div class = "row">
+        <h4><br>2. Loading live Tweets</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            Another feature I feel that could be useful would be the ability to load RunKeeper Tweets in real time. This would update the set of Tweets used on the site with the most recent RunKeeper Tweets and update the site in real time as more RunKeeper Tweets are sent out. This would allow researchers to analyze the most recent RunKeeper trends as they happen. Implementing this feature could be accomplished through the use of a Twitter API.
+        </p>
+    </div>
+    
+<!--
+    <div class = "row">
+        <h4><br>3. Replacing the dreadful Vega-Lite charts</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            Bleh
+        </p>
+    </div>
+-->
+    
+    
+    
+    
+<!-- What I Learned-->
+     <div class = "row">
+        <h3>What I Learned<br></h3>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+        Admittedly, this project was quite the grind and took me about 20 hours in total to complete since it was my first time using TypeScript and JQuery to dynamically generate content on a webpage according to a given dataset. However, grinding out this project was very rewarding in the end and gave me much more confidence in my overall programming abilities moving forward.<br><br>
+
+        Through completing this project I gained the skill of using JQuery to dynamically modify web content with computed values (for example, calculating the number of tweets of each type of activity in the dataset). Furthermore, it enabled me to polish my HTML, CSS, and Bootstrap skills in general.</p>
+    </div>
+    
+</div>
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+<!--Footer-->
+    <footer>
+        <p>© 2019 Tyler Valdivieso</p>
+    </footer>
+    
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
