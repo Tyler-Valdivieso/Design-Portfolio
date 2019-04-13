@@ -7,12 +7,12 @@ body{
 }
 
 a {
-    color: inherit;
-    text-decoration: underline;
+    color: #ff7575;
 }
 
 a:hover {
-    color: #919191;
+    color: #919191; /* Grey */
+    text-decoration: none;
 }
 
 nav {
@@ -101,6 +101,15 @@ h3{
     font-size: 260%;
 }
 
+h4{
+    color: black;
+    font-family: 'open sans', sans-serif;
+    font-weight: bold;
+    font-size: 130%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 .secondarytitles{
     color: black;
@@ -114,33 +123,21 @@ h3{
 }
 
 
-.tylerbio{
-    font-family: 'open sans', sans-serif;
-    color: white;
-    padding: 2%;
-    margin-top:2%;
-    font-size: 100%;
-    text-align: center;
-    border-radius: 25px;
-    background: black;
-}
-
-
 
 img{
     width: 60%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 1px solid #ff7575;
 }
 
 
-.infotext{
+.dtext{
     font-family: 'open sans', sans-serif;
-    color: black;
-    margin-top: 2%;
-    margin-left: 7%;
-    margin-bottom: 4%;
-    font-size: 125%;
+    font-size: 97%;
+    text-align: center;
+    margin-top: 1%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer{
@@ -148,5 +145,7 @@ footer{
     font-size: 65%;
     margin-top: 1%;
     margin-right: 2%;
-    text-align: right;
+    bottom:0%; 
+    right: 0%; 
+    position:fixed;
 }
