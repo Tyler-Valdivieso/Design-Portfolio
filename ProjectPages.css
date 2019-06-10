@@ -92,15 +92,15 @@ h5{
 
 h3{
     color: black;
-    margin-top: 3%;
+    margin-top: 7%;
     margin-bottom: 2%;
     padding-left: 20px;
     padding-right: 20px;
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 h4{
@@ -120,7 +120,7 @@ h4{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 .dtext{

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--
+WRITTEN BY: Tyler Valdivieso
+EMAIL: valdivit@uci.edu
+-->
+    
+    <head>
+         
+        <meta charset="utf-8">
+         <!--Sets the width of the webpage to stay the same as the width of the device the page is being viewed on-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Importing bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Importing fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500+Josefin+Slab%7COpen+Sans%7CVolkhov" rel="stylesheet">
+        <!--Importing stylesheet-->
+        <link rel= "stylesheet" type= "text/css" href= ProjectPages.css >
+        <title>T Valdivieso CoreLogic</title>
+    </head>
+    
+    <body>
+        
+<!--NavBar-->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <span class="navbar-brand align-items-center d-flex flex-fill"></span>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav justify-content-center d-flex flex-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            <li class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="services" data-toggle="dropdown">
+                    Project Select
+                </button>
+                <div class="dropdown-menu" aria-labelledby="services">
+                    <a class="dropdown-item" href="Vibes.html">Vibes</a>
+                    <a class="dropdown-item" href="CoreLogic.html">CoreLogic Property Finder</a>
+                    <a class="dropdown-item" href="TwitterRunkeeper.html">Runkeeper Tweet Tracker</a>
+                    <a class="dropdown-item" href="SpotifyBrowser.html">Spotify Browser</a>
+                    <a class="dropdown-item" href="JPsOW1.html">JP's Old West</a>
+                    <a class="dropdown-item" href="GroupMe1.html">GroupMe Redesign</a>   
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-fill">
+        <a class="linkedin" href="https://www.linkedin.com/in/tyler-valdivieso-747b9915a/">
+        <img class="linkedin" src=linked_in_black.png alt = "LinkedIn"></a>
+    </div>
+</nav>        
+<hr>
+    
+<div class="container">
+    
+<!-- Project Overview -->
+    <div class = "row">
+        <h3>Project Overview<br></h3>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12" style="text-align: left;">
+            <strong>Project Objective:</strong> Work alongside CoreLogic to design and build a widget that enables real estate investors to peruse CoreLogic’s massive database of properties available for purchase in the US. <br>
+            <strong>Role:</strong> Head UI/UX designer & front end developer<br>
+            <strong>Tools/Technologies Used:</strong> Figma, wireframe.cc, Xtensio, Photoshop, Angular, CoreLogic APIs, GitHub<br>
+            <strong>Course:</strong> Senior Capstone Project<br>
+            <strong>Partner:</strong> <a href="https://www.corelogic.com/" target="_blank">CoreLogic</a><br>
+            <strong>Project Timeline:</strong> October 2018 - March 2019<br>
+        </p>
+    </div>
+    
+    <h4 style="padding-top:5%;">The task at hand</h4>
+    
+    <div class = "row">
+        <p class = "dtext col-sm-7">For my senior capstone project, myself and 4 other students were paired with an Irvine based company named CoreLogic. CoreLogic is an Irvine based real estate data company that has been collecting data on 99% of the properties in the United States over that last 50 or so years. As of now their main business comes from selling information on properties and conducting real estate appraisals.<br><br>
+
+Now they are looking to make use of their massive amount of data in a new way by developing a tool that allows real estate investors, both casual and professional, to search for properties for sale throughout the entire US. This is where we come in. </p>
+        <div class="col-sm-5 align-self-center">
+            <img src="noborder_CLlogo.jpg" style="width: 100%;">
+        </div>
+    </div>
+    
+    <div class = "row">
+        <h3>Competitive Analysis</h3>
+        <p class = "dtext col-12">
+            Before we started designing anything it was important to get a lay of the land as far as real estate software goes. So we conducted a competitive analysis of some of our main competitors: RoofStock, HomeUnion, and HouseCanary. 
+        </p> 
+    </div>
+    
+    <div class = "row">
+        <h4><br>RoofStock</h4>
+        <p class = "dtext col-12">
+            Roofstock allows casual investors to search for, analyze, and buy single-family homes with tenants already in them as a way to make passive income. It is a service that allows investors to focus on “asset allocation” (such as in the stock market), rather than researching and buying vacant homes that need to be repaired and leased. Roofstock is a competitor that our partners at CoreLogic think does a solid job at allowing users to easily find and manage properties. However, Roofstock only operates in 16 states whereas CoreLogic already has information on the majority of properties in the entire United States.
+        </p>
+    </div>
+    
+    <div class="col-12">
+            <img src="roofstock1.png" style="width: 80%; display: block; margin:auto;">
+    </div>
+    
+    <div class="col-12">
+            <img src="roofstock2.png" style="width: 80%; display: block; margin:auto; padding-top: 5%;">
+    </div>
+    
+    <div class = "row">
+        <h4><br>HomeUnion</h4>
+        <p class = "dtext col-12">
+            HomeUnion is an online real estate investment management firm that helps “small-time investors” buy, renovate, and rent single-family rental properties. HomeUnion operates along the full lifecycle: locating properties, advising on the purchase, finding renters, managing the property, and selling. HomeUnion directly manages property, rather than refer buyers to property managers (Roofstock).
+        </p>
+    </div>
+    
+    <div class="col-12">
+            <img src="homeunion1.png" style="width: 75%; display: block; margin:auto;">
+    </div>
+    
+    <div class="col-12">
+            <img src="homeunion2.png" style="width: 75%; display: block; margin:auto; padding-top: 5%;">
+    </div>
+    
+    <div class = "row">
+        <h4><br>HouseCanary</h4>
+        <p class = "dtext col-12">
+            HouseCanary leverages comprehensive data and predictive analytics to help investors make more informed real estate decisions. Utilizing more than four decades of data, they establish property values and forecast returns for every state, ZIP Code, block, and home in the US. Insights are delivered via app or API.
+        </p>
+    </div>
+    
+    <div class="col-12">
+            <img src="housecanary1.png" style="width: 75%; display: block; margin:auto;">
+    </div>
+    
+    <div class="col-12">
+            <img src="housecanary2.png" style="width: 75%; display: block; margin:auto; padding-top: 5%;">
+    </div>
+    
+        
+    <div class = "row">
+        <h3>Personas</h3>
+        <p class = "dtext col-12">
+            To our partners at CoreLogic it was imperative that we designed an application that was simple enough for casual real estate investors to use without being overwhelmed or intimidated, but robust enough so that professional real estate investors can quickly and reliably find properties that match their investment criteria. Because of this our user personas focus heavily on these two type of investors.
+        </p>
+    </div>
+    
+    <div class = "row">
+        <div class="col-sm-6">
+                <img src="pro_paul.png" style="width: 100%; display: block; margin:auto; padding-top: 5%;">
+        </div>
+
+        <div class="col-sm-6">
+                <img src="casual_cory.png" style="width: 100%; display: block; margin:auto; padding-top: 5%;">
+        </div>
+    </div>
+    
+    <div class = "row">
+        <h3>Low-Fidelity</h3>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-sm-6 text-center align-self-center">
+             Now equipped with knowledge about our competitors, an understanding of our primary user base, and a game plan from our partners at CoreLogic, it was time to start designing. First and foremost, I started off by creating some simple wireframes to flesh out our initial ideas and give us a blueprint to build off of going foreword. 
+        </p>
+    
+
+        <div class="col-sm-6">
+                <img src="CL_wireframe1.png" style="width: 100%; display: block; margin:auto;">
+        </div>
+    </div>
+    
+    <div class = "row">
+        <div class="col-sm-6">
+                <img src="CL_wireframe2.png" style="width: 100%; display: block; margin:auto; padding-top: 10%;">
+        </div>
+
+        <div class="col-sm-6">
+                <img src="CL_wireframe3.png" style="width: 100%; display: block; margin:auto; padding-top: 10%;">
+        </div>
+    </div>
+    
+    <div class = "row">
+        <h3>High-Fidelity</h3>
+    </div>
+    
+    <div class = "row">
+        <div class="col-sm-6">
+            <figure>
+                <img src="CL_artboard.png" style="width: 100%; display: block; margin:auto; padding-top: 5%;">
+                    <figcaption>An overview of my prototype</figcaption>
+            </figure>
+        </div>
+        
+        <p class = "dtext col-sm-6 text-center align-self-center">
+            Next, I cooked up some high-fidelity mockups that doubled as a clickable prototype thanks to the power of Figma. The value of having a high-fidelity prototype here was immeasurable because it allowed us to confirm that the application satisfied our primary stakeholders (CoreLogic and real estate investors) without even having to write a single line of code. Feel free to <a href="https://www.figma.com/proto/LBXQszJZkBMaD6OFf8RZNJR3/CoreLogic-Project?node-id=17%3A2&scaling=contain" target="_blank">check out the prototype</a> for yourself if you would like. 
+        </p>
+    </div>
+     
+    <div class = "row" style="padding-top:10%;">
+        <h4>Demo</h4>
+    </div>
+    
+    <div class= "row">
+        <figure class="col-sm-12 align-self-center">
+            <video width="80%" autoplay muted loop controls> 
+                <source src="CL_demo.mov" type="video/mp4">
+            </video>
+                <figcaption>A quick demo of my prototype showcasing the primary user flow</figcaption>
+        </figure>
+    </div>
+    
+    <div class = "row" style="padding-top:10%;">
+        <h4>Key Features: Advanced Search & Saving Search Criteria</h4>
+    </div>
+    
+    <div class="row">
+        <p class = "dtext col-sm-5 text-center align-self-center">
+            Through interviewing investors and chatting with people at CoreLogic, we discovered that most real estate investors have specific formulas they follow for determining worthwhile properties. Their “secret sauce” as one investor described it to us. Therefore, I felt it was super important to include a feature that allows users to save specific combinations of search filters. This allows investors to quickly search for properties that match their specific formulas without having to play around with the filters each and every time they log onto the site. Overall, a nice shortcut to have in place for experienced users.
+        </p>
+        
+        <div class="col-sm-7">
+            <img src="CL_advancedsearch.png" style="width: 100%; display: block; margin:auto; padding-top: 5%;">
+        </div>
+    </div>
+    
+    <div class = "row" style="padding-top:10%;">
+        <h4>Key Features: Bookmarking Properties</h4>
+    </div>
+    
+    <div class="row">
+        <p class = "dtext col-sm-5 text-center align-self-center">
+            Another very important feature I felt the need to include was a bookmarking ability. If users find a property they are interested in but aren’t ready to pull the trigger on just yet, they can bookmark it for later. Without this feature I can only imagine how much of a pain it would be to track down a specific property again after you’ve left the application and come back some time later. 
+        </p>
+        
+        <div class="col-sm-7">
+            <img src="CL_bookmark.png" style="width: 100%; display: block; margin:auto; padding-top: 5%;">
+        </div>
+    </div>
+    
+    <div class = "row" style="padding-top:10%;">
+        <h4>Style</h4>
+    </div>
+    
+    <div class = "row">
+        <p class ="dtext col-12" style="padding-top:2%;">As far as the style of the widget goes, I aimed to keep the overall layout and colors consistent with CoreLogic’s other services while also throwing in dashes of my own personal touch here and there. </p>
+    </div>
+    
+    <div class="col-12">
+        <img src="CL_comparison.png" style="width: 100%; display: block; margin:auto; padding-top: 2%;">
+    </div>
+    
+    <div class = "row">
+        <h3>Takeaways<br></h3>
+    </div>
+    
+    <div class="row">
+        <p class = "dtext col-sm-6 text-center align-self-center">
+            CoreLogic was a joy to work with. There was great chemistry amongst the team all around which enabled us to communicate well with each other so that we were able to build them exactly what they wanted. They were great at being supportive of what were building while also providing some guidance through constructive criticism when we would showcase our progress during meetings at their office. Furthermore, it was immensely satisfying to be able to bring together all the skills I’ve been fostering during my 4 years here at UC Irvine to build a product that I’m proud of for a real client. 
+        </p>
+        
+        <div class="col-sm-6">
+            <figure>
+                <img src="capstone_crew.png" style="width: 100%; display: block; margin:auto;">
+                    <figcaption>The team and I at our capstone project showcase</figcaption>
+            </figure>
+            
+        </div>
+    </div>
+    
+    </div>
+ </div>
+        
+        
+        
+        
+    <!--Footer-->
+    <footer>
+        <p>© 2019 Tyler Valdivieso</p>
+    </footer>
+    
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>

@@ -39,10 +39,11 @@ EMAIL: valdivit@uci.edu
                 </button>
                 <div class="dropdown-menu" aria-labelledby="services">
                     <a class="dropdown-item" href="Vibes.html">Vibes</a>
+                    <a class="dropdown-item" href="CoreLogic.html">CoreLogic Property Finder</a>
                     <a class="dropdown-item" href="TwitterRunkeeper.html">Runkeeper Tweet Tracker</a>
                     <a class="dropdown-item" href="SpotifyBrowser.html">Spotify Browser</a>
-                    <a class="dropdown-item" href="GroupMe1.html">GroupMe Redesign</a>
-                    <a class="dropdown-item" href="JPsOW1.html">JP's Old West</a>  
+                    <a class="dropdown-item" href="JPsOW1.html">JP's Old West</a>
+                    <a class="dropdown-item" href="GroupMe1.html">GroupMe Redesign</a>  
                 </div>
             </li>
             <li class="nav-item">
@@ -60,101 +61,136 @@ EMAIL: valdivit@uci.edu
 <div class="container">
 
 
-<!-- Problem -->
+<!-- Project Overview -->
     <div class = "row">
-        <h3>Background<br></h3>
+        <h3>Project Overview<br></h3>
     </div>
     
     <div class = "row">
-    <p class = "dtext col-12">For one of my senior project courses I was assigned to a team and tasked with creating software that tackles mental health issues. This is where Vibes was conceived. In general, Vibes is an app where users anonymously post how they feel and then send and receive “vibes” amongst each other through the use of preset emojis. In addition to this, users can track how they feel in more detail by submitting a private journal entry alongside their mood.<br><br>
-        
-        The purpose behind Vibes is to create a positive and uplifting community that users can rely on for validation and affirmation when they’re feeling down. As with most apps, it is hard to tell you exactly what Vibes is by using only words. I suggest you<a href="https://inf-134-vibes.firebaseapp.com" target="_blank"> experience Vibes here</a> to get a better feel for exactly what it is. </p>
+        <p class = "dtext col-12" style="text-align: left;">
+            <strong>Project Objective:</strong> For one of my senior project courses, myself and three other students were randomly assigned to a development team and issued a very open challenge. Create a software system that helps users confront mental health issues. This is where Vibes was conceived.<br>
+            <strong>Role:</strong> UI/UX designer & front end developer<br>
+            <strong>Tools/Technologies Used:</strong> Marvel, Sketch, Photoshop, Angular, Bootstrap, Git + GitLab, Slack<br>
+            <strong>Course:</strong> Project in User Interaction Software (Informatics 134)<br>
+            <strong>Instructor:</strong> <a href="https://madebypaul.com/" target="_blank">Paul Lumsdaine</a><br>
+            <strong>Project Timeline:</strong> Feb 2019 - March 2019<br>
+            <strong>Product:</strong> <a href="https://inf-134-vibes.firebaseapp.com" target="_blank">Vibes</a><br>
+        </p>
+    </div>
+    
+    <h4 style="padding-top:5%;">What is Vibes?</h4>
+    
+    <div class = "row">
+        <p class = "dtext col-sm-7">Vibes is an online mood tracking app intended to help users feel better about themselves through the power of journaling and positive affirmations from the community. The thought process behind Vibes is that it feels better to know that you’re not alone when you’re feeling down, but it can be difficult and embarrassing to openly seek help. However, through the power of online anonymity and geolocation technology, Vibes allows people to express their feelings to those around them and receive positive feedback without the social anxiety that often comes with publicly expressing your negative emotions to your friends and peers. <br><br>
+
+            As with most software, it is hard to tell you exactly what Vibes is by using only words. I strongly suggest you<a href="https://inf-134-vibes.firebaseapp.com" target="_blank"> play around with Vibes here</a>, even if it's only for a few seconds, to get a better understanding of what I'm going to talk about below.</p>
+        <figure class="col-sm-5">
+            <video width="250px" autoplay muted loop controls> 
+                <source src="vibes_demo.mov" type="video/mp4">
+            </video>
+                <figcaption><br>A little demo of Vibes in action</figcaption>
+        </figure>
     </div>
     
     <div class = "row">
-        <h3>Key Design Choices I Made<br></h3>
+        <h3>Design Overview<br></h3>
     </div>
     
     <div class = "row">
-        <h4><br>1. Emotion wheel implementation</h4>
+        <h4><br>Early Stages</h4>
     </div>
     
     <div class = "row">
         <p class = "dtext col-12">
-            One of my main jobs on this project was to the implement the emotion wheel users see once they login to the app. During the design process two versions of the emotional wheel were created and our team was split upon which one to use. Option A consisted of a “emotion flower” where users selected their emotion by sliding on the flowers petals. Option B (the one used in our app) was a collapsable “emotion wheel” where users selected their mood by clicking on it. To decide upon which design was going to be used in the app, I conducted some basic A/B testing and discovered that the vast majority of users preferred option B and found it more intuitive to use in general. 
+            The key design feature for Vibes that we built around early on is that all communication amongst users is done through preset emojis. There is no way to send traditional text messages to other users by design in an attempt to thwart trolling and verbal abuse on the app.<br><br>
+            
+Like I said earlier, it is imperative that our users remain anonymous in order to encourage them to share how they feel without requiring the vast amount of courage it takes to open up to others. However, people online very often abuse the power of anonymity in order to be nasty and harass others. I survived the days of playing Modern Warfare 2 on Xbox Live so believe me when I say I know first hand what tends to happen when you mix online anonymity with peer to peer messaging/chatting.<br><br>
+        </p>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-sm-7">    
+Furthermore, the target audience of Vibes is people who are already feeling down so I’m pretty confident that trolling on this app would be even more damaging to users than usual if peer to peer messaging was included. I’m also confident that trolls would be very attracted to Vibes in an effort to destroy the intended positive nature of the app by making use of the complete anonymity it grants them. Obviously, much more positivity and uplifting affirmations could be exchanged between users if they could send each other traditional text based messages rather than just emojis, but the tradeoff of enabling mass trolling is just too big of a price to pay.<br><br>
+            
+            With all of that in mind we began constructing our first designs. A major checkpoint in the design phase for us was creating our clickable prototype. Before we started actually developing the software we wanted to gather some feedback from our target audience and potential early adopters so we created a prototype to run some usability testing with. The power of rapid prototyping and user testing early on in the development cycle cannot be understated. It’s much more time and cost efficient to catch overlooked design flaws early on using prototypes than it would be to discover design flaws after the software is already built. This is why we felt the need to run some usability testing before we proceeded with the project. Feel free to check out our <a href="https://marvelapp.com/ai4a29b" target="_blank">prototype</a> and <a href="https://docs.google.com/document/d/1ZXn2C3Pkqr9dtn9GZcPLB7aMnUOVW5YVJ--7jPbhKxQ/edit" target="_blank">test results</a> for yourself if you would like to do so.<br><br>
+        </p>
+        <figure class="col-sm-5 align-self-center">
+            <video width="250px" autoplay muted loop controls> 
+                <source src="vibes_proto_demo.mov" type="video/mp4">
+            </video>
+                <figcaption><a href="https://marvelapp.com/ai4a29b" target="_blank"><br>Our clickable prototype</a></figcaption>
+        </figure>
+    </div>
+    
+    <div class = "row">
+        <h4><br>Emotion Wheel</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            One of my main jobs on this project was to the implement the emotion wheel users see once they login to the app. The inspiration for this feature came from Robert Plutchik’s wheel of emotions. At first I designed the wheel to be as close to Plutchik’s wheel as possible. However, Plutchik’s wheel just doesn’t transition well into a UI element for a few reasons. For one it was a pain to recreate from a front end development point of view. Secondly, just having a wheel of colors wasn’t intuitive enough without explicitly writing words all over it which defeats the purpose. It’s impossible to open the app for the first time and determine which emotion each color on the wheel represents without clicking on every single slice of the wheel. My initial design for the wheel is probably one of the least intuitive things ever created.<br><br>
+
+So I switched it up and came up with a much better design with the emoji wheel. The emojis are much more intuitive as they can obviously represent emotions much better than colors do and are something everyone who has a phone is familiar with. The collapsibility of the emoji wheel is also much more space efficient, clean, and satisfying to use than the old wheel. Overall, the emoji wheel is a design element that I’m proud of.<br><br>
+            
+            As for the emojis I’ve chosen here, I selected emojis that I feel best encompass the most common and overarching emotions we feel as humans (joy, sadness, anger, anxiety, annoyance/frustration). Obviously 6 simple emojis can’t cover all of the complex emotions we feel as humans, but as far as reaching our minimum viable product goes I feel as though these 6 emojis are a great starting point. They cover a lot of the common emotions we feel as humans without overwhelming the user with hundreds of different of options.
     </div>
     
     
     <div class = "row">
+        <figure class="col-lg-12">
+            <img style="width:100%; display:block; margin:auto; padding-top:25px;" src=emowheelevo.png alt = "Emo Flower">
+                <figcaption>The evolution of our emotion wheel<br>(design inspiration > high-fidelity mockup > working code)</figcaption>
+        </figure>
+    </div>
+    
+    <div class = "row">
+        <h4><br>Sending Vibes</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            The “Send Vibes” component of our app is where all peer to peer interactions take place. The avatars that appear on screen are all other real people nearby to the user that have uploaded an emotion to Vibes. We thought about displaying the avatars of users within a specific radius to the user (similar to how dating apps like Tinder and Bumble use geolocation), however this would cause a great imbalance between the number of other people that a user could interact with depending on the user’s location. For example, users in a very populated area like Los Angeles would be overloaded with other users to send vibes to whereas users in less populated areas like Wyoming would most likely not have many people to interact with on the app which could make them feel lonely and worsen their mood. With this in mind, we used geolocation to display the 10 closest other users to the user so that no matter how populated or unpopulated the nearby area of the user is, they always have others to interact with. (Side note: we don’t have 10 users yet so that’s why only 5 appear in the screenshot)<br><br>
+ 
+We drew inspiration for this feature from Nintendo’s “Mii Lobby” on the Wii. The design of the Mii lobby gives off a wholesome sense of community while allowing users to easily select and interact with their desired avatar. That sense of community and ease of interactivity was what we tried to replicate here in our app.
+        </p>
         <figure class="col-lg-6">
-            <img style="width:250px; display:block; margin:auto; padding-top:75px;" src=EmoWheel.png alt = "Emo Flower">
-                <figcaption><br><br>Option A (Emo Flower)</figcaption>
+            <img style="width:250px; display:block; margin:auto; padding-top:25px;" src=sendvibes.png alt = "Send vibes page">
+                <figcaption><br>Sending Vibes Page</figcaption>
         </figure>
 
-        <figure class="col-lg-6">
-            <video width="250px" autoplay muted loop controls> 
-                <source src="emwheelvid.mov" type="video/mp4">
-            </video>
-                <figcaption>Option B (Emo Wheel)</figcaption>
+        <figure class="col-lg-6 align-self-center">
+            <img style="width:85%; display:block; margin:auto;" src=miis.png alt = "Wii lobby">
+                <figcaption><br>Nintedo's Mii lobby</figcaption>
         </figure>
     </div>
     
- 
+    
     <div class = "row">
-        <h4><br>2. Choosing to make a progressive web app (PWA)</h4>
+        <h4><br>Analytics Page</h4>
     </div>
     
     <div class = "row">
-        <p class = "dtext col-12">
-            After conceiving our idea for the project, we knew two things heading into the development stage. That we wanted Vibes to be mainly a mobile based experience and that we were going to need to create a few custom UI elements to make our idea a reality. With these two things in mind we had to decide under which framework to build our app.<br><br>Since a few members of our team, myself included, had some prior experience with Ionic we thought that Ionic might be the way to go at first. However, none of us really had a particularly good experience with using Ionic and I had a major concern that building custom UI elements using Ionic would be extremely difficult given the lack of documentation and community behind Ionic, especially since Ionic 4 had just released.<br><br>Therefore, we decided to go with our second idea and create a progressive web app (PWA for short). Creating a PWA in this situation was the perfect choice for two reasons. For one, PWAs automatically enable caching and for your website to be downloaded onto a mobile device just like any other app. Secondly, since a PWA is a web app it can created by using standard web development tools (HTML, CSS, Bootstrap, TypeScript, etc.) which makes it so much easier to create custom UI elements than if we were using something like Ionic. 
-        </p>
-    </div>
-    
-    
-    <div class = "row">
-        <h4><br>3. Disallowing peer to peer messaging</h4>
-    </div>
-    
-    <div class = "row">
-        <p class = "dtext col-12">
-            While thinking further about who will use this app and how they will do so, I thought about internet trolls and those who use anonymity to tear down others online. Our app is the perfect target to be invaded by trolls because all users on the app are anonymous and the app is all about promoting positive “vibes”. Furthermore, since our target audience consists of those who are seeking a positive online environment and uplifting community, I figured that trolling would be extremely detrimental to the experience of our users and it should be prevented at all costs. By not including peer to peer messaging there is no way for users to be nasty to each other on the app. The only interaction users can have with one another other is sending “vibes” through the preset emojis we have provided them.  
-        </p>
-    </div>
-    
-    <div class = "row">
-        <h3>Potential Improvements<br></h3>
-    </div>
- 
-    <div class = "row">
-        <h4><br>1. Allowing peer to peer messaging</h4>
-    </div>
-    
-    <div class = "row">
-        <p class = "dtext col-12">
-            After we created our initial prototype, we conducted some basic user testing to help us better understand our users’ thoughts on the app. One comment that came up during multiple different tests was “why can’t I message anyone?”. One ability I believe that makes a great designer/developer is being able to put your pride aside and accept that no matter how smart you may be, the collective knowledge of your user base is always greater than your own. Even though I initially thought it would be a great design choice to leave out peer to peer messaging, a portion of our users think otherwise which means we should conduct some more research beyond our initial user test to see if adding a messaging feature is really the way to go.  
-        </p>
-    </div>
-    
-    <div class = "row">
-        <h4><br>2. Squashing Bugs</h4>
-    </div>
-    
-    <div class = "row">
-        <p class = "dtext col-12">
-            As you may have discovered for yourself, our application is admittedly pretty buggy at the moment. This is probably because it has only been under development for a few weeks though. A few bugs that I've discovered that need cleaning up include: new users' "Received Vibes" chart not showing up when they have yet to be sent any vibes from other users, some users' journals not updating properly, and others users' emojis overlapping on the "Send Vibes" screen.
-        </p>
-    </div>
-    
-    <div class = "row">
-        <figure class="col-lg-6">
-            <img style="width:250px; display:block; margin:auto; padding-top:25px;" src=recVibes.png alt = "Received Vibes Screen">
-                <figcaption><br>Received Vibes screen working as intended.</figcaption>
+        <figure class="col-sm-6">
+            <img style="width:250px; display:block; margin:auto; padding-top:25px; " src=recVibes.png alt = "Received Vibes Screen">
         </figure>
+        <p class = "dtext col-sm-6 justify-content-center align-self-center">
+            The analytics page is where users can see all of the vibes they have been sent by other users and can look back on all of the private journal entries they have written. The essence of this app is basically to help users improve their mood. So having an analytics page that enables users to bask in the positive vibes sent their way and track their mental health journey through journaling is vital to the design of Vibes. 
+        </p>
         
-        <figure class="col-lg-6">
-            <img style="width:250px; display:block; margin:auto; padding-top:25px;" src=recVibesGlitched.png alt = "Glitched Received Vibes Screen">
-                <figcaption><br>Received Vibes screen bugged out.</figcaption>
-        </figure>
+    </div>
+    
+    <div class = "row">
+        <h3>Software Design Choices<br></h3>
+    </div>
+    
+    <div class = "row">
+        <h4><br>Choosing to make a progressive web app (PWA)</h4>
+    </div>
+    
+    <div class = "row">
+        <p class = "dtext col-12">
+            After fleshing out the designs for the project, we knew two things heading into the development stage. One, that we wanted Vibes to be mainly a mobile based experience and two that we were going to need to create a few custom UI elements to make our idea a reality. With these two things in mind we had to decide under which framework to build our app.<br><br>Since a few members of our team, myself included, had some prior experience with Ionic we thought that Ionic might be the way to go at first. However, none of us really had a particularly good experience with using Ionic and I had a major concern that building custom UI elements using Ionic would be extremely difficult given the lack of documentation and community behind Ionic, especially since Ionic 4 had just released.<br><br>Therefore, we decided to go with our second idea and create a progressive web app (PWA for short). Creating a PWA in this situation was the perfect choice for two reasons. For one, PWAs allow for your web app to be downloaded onto a mobile device just like any other app. Secondly, since a PWA is a web app it can created by using standard web development tools (HTML, CSS, Bootstrap, TypeScript, etc.) which makes it so much easier to create custom UI elements than if we were using something like Ionic. 
+        </p>
     </div>
     
     
@@ -164,7 +200,7 @@ EMAIL: valdivit@uci.edu
     
     <div class = "row">
         <p class = "dtext col-12">
-            Through this project I was able to apply some front end skills I have picked up throughout the last few years such as Angular, Bootstrap, HTML, TypeScript, and so on. Being able to use these skills to create something interesting from scratch was a rewarding experience. More importantly however, this project showed me how much you can accomplish when your team has great chemistry and enjoy working with one another. I’m extremely proud of how much our team was able to achieve in only about 4 weeks of development time and I believe the relationships that were built amongst our team is one of the main reasons we were able to get so much done.  
+            Through this project I was able to apply and showcase some valuable design and front end skills I have picked up throughout the last few years. Being able to use these skills to create something interesting from scratch was a rewarding experience. More importantly however, this project showed me how much you can accomplish when your team has great chemistry and enjoy working with one another. I’m extremely proud of how much our team was able to achieve in only about 4 weeks of development time and I believe the relationships that we built with one another are the main reasons why we were able to get so much done.  
         </p>
     </div>
  
